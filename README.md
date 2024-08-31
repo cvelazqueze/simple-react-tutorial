@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Simple React: Tutorial Interactivo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenido al proyecto **Simple React: Tutorial Interactivo**. Este es un tutorial paso a paso diseñado para ayudar a los desarrolladores, especialmente a los principiantes, a aprender los conceptos básicos y avanzados de React a través de un enfoque práctico e interactivo.
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este proyecto cubre una amplia gama de temas en React, desde la creación de componentes básicos hasta el manejo de APIs y el uso de Hooks avanzados. Cada sección del tutorial está diseñada para ser clara, concisa, y fácil de seguir, con ejemplos interactivos que permiten a los usuarios experimentar directamente con el código.
 
-### `npm start`
+## Contenido
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El tutorial está dividido en las siguientes secciones:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Componentes**
+   - Introducción a los componentes en React.
+   - Ejemplos de componentes funcionales y de clase.
 
-### `npm test`
+2. **Estado**
+   - Manejo del estado local con `useState`.
+   - Ejemplos interactivos para entender cómo el estado afecta el renderizado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Eventos**
+   - Manejo de eventos en React, como clics de botones e interacciones con inputs.
+   - Ejemplos prácticos de manejo de formularios.
 
-### `npm run build`
+4. **Consumo de APIs**
+   - Cómo hacer peticiones a APIs externas utilizando `fetch`.
+   - Visualización de datos en formato JSON.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Hooks**
+   - Introducción y uso de hooks básicos como `useState` y `useEffect`.
+   - Explicación de hooks avanzados como `useContext`, `useReducer`, y `useRef`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para clonar y ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
-### `npm run eject`
+```bash
+# Clona el repositorio
+git clone https://github.com/cvelazqueze/simple-react-tutorial.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Entra en el directorio del proyecto
+cd simple-react-tutorial
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Instala las dependencias
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Inicia la aplicación
+npm start
