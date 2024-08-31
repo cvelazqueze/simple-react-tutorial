@@ -1,0 +1,141 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+    en: {
+      translation: {
+        "WelcomeMessage": "Welcome to Simple React",
+        "TutorialDescription": "Interactive Tutorial to Learn React",
+        "Components": "Components",
+        "State": "State",
+        "Events": "Events",
+        "ApiConsumption": "API Consumption",
+        "Hooks": "Hooks",
+        "WhatIsComponent": "What is a Component in React?",
+        "ComponentDescription": "In React, a component is a reusable piece of the user interface. You can think of components as JavaScript functions that accept inputs, called 'props', and return React elements that describe what should appear on the screen.",
+        "BasicComponentExample": "Basic Component Example",
+        "BasicComponentExplanation": "In the example above, Welcome is a component that accepts a prop called 'name' and uses it to display a personalized message.",
+        "ComponentInAction": "Component in Action",
+        "UsageSyntax": "To use our component, we use the syntax",
+        "ImportExplanation": "Where Welcome is the name of our component imported from our directory ./Welcome",
+        "Hello": "Hello",
+        "WhatIsState": "What is State in React?",
+        "StateDescription": "State in React is a structure used to contain data or information about the component. When the state changes, the component re-renders to reflect those changes.",
+        "UseStateExample": "Example of useState Usage",
+        "ModifyState": "Modify the State",
+        "EnterName": "Enter a name",
+        "EventHandlingInReact": "Event Handling in React",
+        "EventHandlingDescription": "Events in React work similarly to how they do in HTML. You can listen for events such as clicks, input changes, or form submissions and handle those interactions through functions.",
+        "EventExample": "Event Example",
+        "EventExampleDescription": "Type a name and then change the greeting with the button:",
+        "ChangeGreeting": "Change Greeting",
+        "Welcome": "Welcome",
+        "ApiTutorialHeading": "API Consumption in React",
+        "ApiTutorialDescription": "Consuming APIs is a fundamental part of modern web development. In React, we can use the useEffect hook to make API requests and update the component's state with the obtained data.",
+        "ApiExample": "API Consumption Example",
+        "ApiResult": "It gives us the result",
+        "Loading": "Loading data...",
+        "ApiError": "Error fetching the API",
+        "HooksInReact": "Hooks in React",
+        "HooksDescription": "Hooks are a new addition in React 16.8 that let you use state and other React features without writing a class.",
+        "UseState": "useState",
+        "UseStateDescription": "The useState hook lets you add local state to functional components. Here is a simple example:",
+        "CurrentState": "Current State",
+        "IncrementCounter": "Increment Counter",
+        "UseEffect": "useEffect",
+        "UseEffectDescription": "The useEffect hook lets you perform side effects in functional components. It is similar to componentDidMount, componentDidUpdate, and componentWillUnmount combined in classes.",
+        "CurrentTime": "Current Time",
+        "UseContext": "useContext",
+        "UseContextDescription": "The useContext hook is used to consume a context, which is a way to pass data through the component tree without having to pass props manually at every level.",
+        "ChangeTheme": "Change Theme",
+        "UseReducer": "useReducer",
+        "UseReducerDescription": "The useReducer hook is an alternative to useState, and is useful for managing more complex state logic, especially when there are multiple sub-values or complicated logic.",
+        "StateCount": "State Count",
+        "Counter": "Counter",
+        "Increment": "Increment",
+        "Decrement": "Decrement",
+        "UseRef": "useRef",
+        "UseRefDescription": "The useRef hook allows you to directly access a DOM element or store persistent values between renders without causing a re-render.",
+        "TypeSomething": "Type something...",
+        "FocusInput": "Focus Input",
+        "Theme": "Theme",
+        "CurrentTheme": "Current Theme"
+      }
+    },
+    es: {
+      translation: {
+        "WelcomeMessage": "Bienvenido a Simple React",
+        "TutorialDescription": "Tutorial Interactivo para Aprender React",
+        "Components": "Componentes",
+        "State": "Estado",
+        "Events": "Eventos",
+        "ApiConsumption": "Consumo de APIs",
+        "Hooks": "Hooks",
+        "WhatIsComponent": "¿Qué es un Componente en React?",
+        "ComponentDescription": "En React, un componente es una pieza reutilizable de la interfaz de usuario. Puedes pensar en los componentes como funciones de JavaScript que reciben entradas, llamadas 'props', y devuelven elementos React que describen lo que debería aparecer en la pantalla.",
+        "BasicComponentExample": "Ejemplo de un Componente Básico",
+        "BasicComponentExplanation": "En el ejemplo anterior, Welcome es un componente que acepta un prop llamado 'name' y lo utiliza para mostrar un mensaje personalizado.",
+        "ComponentInAction": "Componente en Acción",
+        "UsageSyntax": "Para utilizar nuestro componente se utiliza la sintaxis",
+        "ImportExplanation": "Donde Welcome es el nombre de nuestro componente importado desde nuestro directorio ./Welcome",
+        "Hello": "Hola",
+        "WhatIsState": "¿Qué es el Estado en React?",
+        "StateDescription": "El estado en React es una estructura que se utiliza para contener datos o información sobre el componente. Cuando el estado cambia, el componente se vuelve a renderizar para reflejar esos cambios.",
+        "UseStateExample": "Ejemplo de Uso de useState",
+        "ModifyState": "Modifica el Estado",
+        "EnterName": "Escribe un nombre",
+        "EventHandlingInReact": "Manejo de Eventos en React",
+        "EventHandlingDescription": "Los eventos en React funcionan de manera similar a como lo hacen en HTML. Puedes escuchar eventos como clics, cambios en un input, o envío de formularios y manejar esas interacciones a través de funciones.",
+        "EventExample": "Ejemplo de Eventos",
+        "EventExampleDescription": "Escribe un nombre y luego cambia el saludo con el botón:",
+        "ChangeGreeting": "Cambiar Saludo",
+        "Welcome": "Bienvenido",
+        "ApiTutorialHeading": "Consumo de APIs en React",
+        "ApiTutorialDescription": "El consumo de APIs es una parte fundamental del desarrollo web moderno. En React, podemos utilizar el hook useEffect para realizar peticiones a APIs y actualizar el estado del componente con los datos obtenidos.",
+        "ApiExample": "Ejemplo de Consumo de API",
+        "ApiResult": "Nos otorga como resultado",
+        "Loading": "Cargando datos...",
+        "ApiError": "Error al consumir la API",
+        "HooksInReact": "Hooks en React",
+        "HooksDescription": "Los hooks son una nueva adición en React 16.8 que te permiten usar estado y otras características de React sin escribir una clase.",
+        "UseState": "useState",
+        "UseStateDescription": "El hook useState te permite añadir estado local a componentes funcionales. Aquí tienes un ejemplo simple:",
+        "CurrentState": "El estado actual es",
+        "IncrementCounter": "Incrementar Contador",
+        "UseEffect": "useEffect",
+        "UseEffectDescription": "El hook useEffect te permite realizar efectos secundarios en componentes funcionales. Es similar a componentDidMount, componentDidUpdate, y componentWillUnmount combinados en clases.",
+        "CurrentTime": "La hora actual es",
+        "UseContext": "useContext",
+        "UseContextDescription": "El hook useContext se usa para consumir un contexto, que es una forma de pasar datos a través del árbol de componentes sin pasar props manualmente en cada nivel.",
+        "ChangeTheme": "Cambiar Tema",
+        "UseReducer": "useReducer",
+        "UseReducerDescription": "El hook useReducer es una alternativa a useState, y es útil para manejar lógica de estado más compleja, especialmente cuando hay múltiples subvalores o lógica complicada.",
+        "StateCount": "Contador de Estado",
+        "Counter": "Contador",
+        "Increment": "Incrementar",
+        "Decrement": "Decrementar",
+        "UseRef": "useRef",
+        "UseRefDescription": "El hook useRef te permite acceder directamente a un elemento DOM o almacenar valores persistentes entre renders sin causar un re-renderizado.",
+        "TypeSomething": "Escribe algo...",
+        "FocusInput": "Enfocar Input",
+        "Theme": "Tema",
+        "CurrentTheme": "El tema actual es"
+      }
+    }
+  };
+  
+  i18n
+    .use(initReactI18next)
+    .init({
+      resources,
+      lng: 'en',
+      fallbackLng: 'en',
+      interpolation: {
+        escapeValue: false
+      }
+    });
+  
+  export default i18n;
+  
+  
+  
